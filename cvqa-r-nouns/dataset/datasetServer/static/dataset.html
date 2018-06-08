@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script type="text/javascript" src="/static/js/dataset.js"></script>
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+		<link rel="stylesheet" type="text/css" href="/static/css/dataset.css"/>		
+	</head>
+	<body>
+		<div id="userSection" align="center">
+			<h4>Select user</h4>
+			<select id="userSelect">
+				<option></option>
+				<option>andeep</option>
+				<option>sandy</option>
+				<option>chris</option>
+				<option>karan</option>
+				<option>mum</option>
+			</select>
+		</div>
+		<br/>
+		<div id="questionSection" style="display: none;">
+			<div id="label" style="background-color: gray; text-align: center;">&nbsp;</div>
+			<br/>
+			<a id="fileLink" href="">Download file</a>
+			<br/>
+			<table>
+				<thead style="background-color: gray; text-align: center;">
+					<th align="center">Image</th>
+					<th align="center">Question</th>
+					<th align="center">New Answer</th>
+				</thead>
+				<tr>
+					<td><img id="image" width="100%" height="400" /></td>
+					<td width="300px">
+						<table id="questionParts">
+						</table>
+					</td>
+					<td><input type="text" id="newAnswer" length="20"/></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="3">
+						<button id="saveButton" title="Save" style="width: 100%;" class="pure-button pure-button-primary">Save</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
